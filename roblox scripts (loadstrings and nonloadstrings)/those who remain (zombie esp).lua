@@ -11,7 +11,7 @@ function ForSurface(insi, name)
     -- // Frame
     
     local Frame = Instance.new("Frame")
-    Frame.BackgroundColor3 = Color3.fromRGB(0,255,0) 
+    Frame.BackgroundColor3 = Color3.fromRGB(0,255,0) ~~ change the "(0,255,0)" to any color code, by default its light green
     Frame.Parent = Surface
     Frame.BackgroundTransparency = 0.8
     Frame.BorderSizePixel = 0
