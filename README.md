@@ -1,1 +1,1 @@
-there wil be more in tha future, maybe
+ill add more scripts overtime
