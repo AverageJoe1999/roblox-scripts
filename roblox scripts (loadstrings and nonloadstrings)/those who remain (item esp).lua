@@ -1,6 +1,6 @@
 local idk = {
 Transparency = 0.4,
-Colors = Color3.fromRGB(0, 128, 255)
+Colors = Color3.new(0, 128, 255)
 }
 
 function ForSurface(insi, name)
@@ -49,14 +49,15 @@ end
 game.workspace.Ignore.Items.DescendantAdded:Connect(function(yes)
 if string.find("Box", yes.Name) then
     ForSurface(yes, yes.Parent.Name)
+    makeChasm(yes, yes, yes.Size)
 end
 end)
 
 while wait() do
 for i,v in pairs(game.workspace.Ignore.Items:GetDescendants()) do
     if v.Name == "Box" and v:IsA"MeshPart" then
-        v:WaitForChild("SurfBoard"):Destroy()
-        v:WaitForChild("BoxHandleAdornment"):Destroy()
+        v:FindFirstChild("SurfBoard"):Destroy()
+        v:FindFirstChild("BoxHandleAdornment"):Destroy()
     end
 end
 end
