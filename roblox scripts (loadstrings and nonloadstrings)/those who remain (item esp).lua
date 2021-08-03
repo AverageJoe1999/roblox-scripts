@@ -1,9 +1,8 @@
--- // Modify here (kind of useless lolololol)
 local idk = {
 Transparency = 0.4,
-Colors = Color3.fromRGB(1, 0, 0.0156863)
+Colors = Color3.fromRGB(0, 128, 255)
 }
--- ^
+
 function ForSurface(insi, name)
 local Surface = Instance.new("BillboardGui")
 Surface.AlwaysOnTop = true
